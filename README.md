@@ -1,3 +1,5 @@
+Kafka is a distributed event store and stream-processing platform. Kafka is used to build real-time streaming data pipelines and real-time streaming applications. 
+
 # kafkaproducer
 
 STEP 1: DOWNLOAD KAFKA IN WINDOWS AND INSTALL IT
