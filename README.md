@@ -11,9 +11,12 @@ zookeeper.properties-
 dataDir=C:/kafka/zookeeper-data
 
 STEP 3: START KAFKA
-#start zookeeper service
+#start the zookeeper service
+.\bin\zookeeper-server-start.sh .\config\zookeeper.properties
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
 #start kafka broker service
+.\bin\kafka-server-start.sh .\config\server.properties
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 STEP 4: CREATE TOPIC TO STORE YOUR EVENTS
@@ -28,4 +31,6 @@ STEP 6: TO READ THE EVENTS
 STEP 8: READ EVENTS FROM THE APPLICATION
 
 .\bin\windows\kafka-console-consumer.bat --topic samplemsg --from-beginning --bootstrap-server localhost:9092
+
+For java class execute the producer & then the consumer class.
  
