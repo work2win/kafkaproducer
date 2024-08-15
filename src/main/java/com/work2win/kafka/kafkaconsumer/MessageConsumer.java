@@ -22,7 +22,6 @@ public class MessageConsumer {
 	static Logger logger = Logger.getLogger(MessageProducer.class.getName());
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Properties properties = new Properties();
 	     
@@ -42,8 +41,7 @@ public class MessageConsumer {
 				e.printStackTrace();
 				e.getStackTrace();
 			}
-		        
-        
+		             
 			
 			 while (true) {
 				 

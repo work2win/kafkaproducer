@@ -30,7 +30,7 @@ public class MessageProducer {
 			kafkaProducer.send(producerRecord).get();
 			logger.log(Level.INFO, "message sent");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 			e.getStackTrace();
 		}
