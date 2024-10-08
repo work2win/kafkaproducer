@@ -13,24 +13,24 @@ dataDir=C:/kafka/zookeeper-data
 STEP 3: START KAFKA
 #start the zookeeper service
 .\bin\zookeeper-server-start.sh .\config\zookeeper.properties
-.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-
 #start kafka broker service
 .\bin\kafka-server-start.sh .\config\server.properties
-.\bin\windows\kafka-server-start.bat .\config\server.properties
 
-STEP 4: CREATE TOPIC TO STORE YOUR EVENTS
-.\bin\windows\kafka-topics.bat --create --topic topic-example --bootstrap-server localhost:9092
+STEP 4: CREATE TOPIC IN YOU JAVA CLASS
 
-STEP 5: WRITE SOME EVENTS INTO THE TOPIC
-.\bin\windows\kafka-console-producer.bat --topic topic-example --bootstrap-server localhost:9092
-
-STEP 6: TO READ THE EVENTS
-.\bin\windows\kafka-console-consumer.bat --topic topic-example --from-beginning --bootstrap-server localhost:9092
-
-STEP 8: READ EVENTS FROM THE APPLICATION
-
-.\bin\windows\kafka-console-consumer.bat --topic samplemsg --from-beginning --bootstrap-server localhost:9092
+STEP 5: CREATE CONSUMER IN YOU JAVA CLASS
+(refer the project)
 
 For java class execute the producer & then the consumer class.
+
+OFFSET EXPLORER
+---------------
+
+Offset Explorer (formerly Kafka Tool) is a GUI application for managing and using Apache Kafka clusters.
+
+https://medium.com/@beheradebananda000/the-ultimate-guide-to-using-offset-explorer-a-gui-for-kafka-on-windows-e1a6b538a7b8
+
+To clear kafka logs, you can delete it from C:\tmp\kafka-logs
+
+
  
